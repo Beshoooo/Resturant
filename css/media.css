@@ -1,0 +1,31 @@
+/* smart phone and tablets*/
+@media (max-width: 767px)
+{
+	.nav-link {padding: 5px 0 5px 0;}
+	.form-inline .form-control{margin: 10px auto;}
+	.Footer .social 
+	{
+    margin: 0px 0 35px 0;
+	}
+
+}
+
+/*small screen*/
+@media (min-width: 768px) and (max-width: 991px)
+{
+	.nav-link {padding: 5px 0 5px 0;}
+	.form-inline .form-control{width: 425px;}
+} 
+
+/*medium screen*/
+@media (min-width: 992px) and (max-width: 1199px)
+{
+	.form-inline .form-control{width: 425px;}
+}
+
+/*Large screen*/
+@media (min-width: 1200px)
+{
+	.form-inline .form-control{width: 425px;}
+}
+}

@@ -1,0 +1,504 @@
+/*fixed because absolute moves the targeted element out of context
+ with the document structure. to make sure that the user will stay 
+ waiting loading page untill disapear.
+*/
+body{
+	height: 100%;
+ 	width:100%;
+	overflow: hidden;
+ 	position: fixed;
+ }
+
+/* hide horizantal scroll */
+.nicescroll-rails-hr .nicescroll-cursors{display: none}
+
+/* Start tool box override*/
+.option-box
+{
+	position: fixed;
+	top: 63px;
+	left: 0;
+	z-index: 9999;
+}
+.option-box .color-option
+{
+	float: left;
+	background-color: #343a40;
+	color: #8e9295;
+	width: 200px;
+	border: 5px solid red;
+	display: none;
+	border-radius: 20px;
+}
+.option-box .color-option ul{margin-bottom: 0.5rem;}
+.option-box .color-option ul li
+{
+	background-color: #ff0000;
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+	display: inline-block;
+	cursor: pointer;
+}
+.option-box i
+{
+	cursor: pointer;
+	color: #fff;
+	border: 3px solid #343a40;
+	border-radius: 50%;
+	width: 50px;
+    height: 50px;
+    padding: 6px 0px 0px 5px;
+    margin-top: 10px;
+
+}
+.option-box .color-option h4{color: #fff;margin-left: 10px;}
+
+/* End tool box override*/
+
+/* Start nav bar override*/
+.navbar-brand span {font-weight: bold;}
+.navbar-brand{font-size: 25px}
+nav {font-size: 20px}
+.dropdown-menu{background-color: #343a40;}
+.navbar-expand-lg .navbar-collapse{margin-right: 200px;}
+
+.navbar li ,.carousel li{padding-right: 30px;}
+.navbar  a{font-family: 'Jura', sans-serif;font-weight: bold}
+.navbar .collapse .nav-link{background-color: #343a40;}
+
+
+.dropdown-item{transition: padding 0.5s ease-in-out;}
+.dropdown-item:hover
+{
+	padding-left: 40px;
+}
+/* End nav bar override*/
+
+/*carousel override*/
+.w-100{height: 700px}
+.carousel h5
+{
+	font-family: 'Anton', sans-serif;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+.carousel .carousel-caption p
+{
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+}
+/*carousel override*/
+
+
+/*About section */
+.About{ margin: 60px 0 60px 0; }
+.About h3
+{
+	font-weight: bold;
+	padding-bottom: 20px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+}
+.About p{font-family: 'Jura', sans-serif;font-size: 20px;}
+.About i{padding-top: 20px;font-size: 50px;}
+/*End About section */
+
+
+/*features section */
+.features{background-color: #eee;}
+.features h1{padding: 70px 0px 50px 0;font-family: 'Dancing Script', cursive;}
+.features h3{padding: 20px 0px 20px 0;}
+.features p
+{
+	margin-bottom: 50px;
+	text-align: justify;
+	padding-left:10px;
+	font-family: 'Jura', sans-serif;
+
+	}
+.features i{font-size: 50px;}
+/* End features section */
+
+/* start testmonials section override*/
+.testmonials{padding: 50px 0 20px 0;}
+.testmonials h1 {padding-bottom: 20px;font-family: 'Dancing Script', cursive;}
+.testmonials span 
+{
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.testmonials p{font-family: 'Jura', sans-serif; font-size: 30px;}
+.testmonials .carousel-item {margin-bottom: 50px;}
+.testmonials li {background-color: #aaa;}
+/* End testmonials section override*/
+
+
+/* start Price section override*/
+.Price{background-color: #eee;}
+.Price h1{padding: 60px 0 40px 0;font-family: 'Dancing Script', cursive;}
+.Price h2
+{
+	padding: 20px 0 20px 0;
+	font-size: 25px;
+	font-family: 'Dancing Script', cursive;
+}
+.Price p
+{	
+	font-size: 25px;
+	background-color: #eee;
+	width: 90px;
+	height: 90px;
+	border-radius: 100%;
+	line-height: 90px;
+	margin: auto;
+	transition-duration: 1s; /*for transforming*/
+}
+.Price li
+{
+	padding: 0;line-height: 35px ;
+	font-family: 'Jura', sans-serif;
+	font-size:20px; 
+}
+.Price a {margin-bottom: 30px;}
+.Price ul {margin-top: 30px;height: 130px;}
+
+.Price .Price-box
+{
+	background-color: #fff;
+	border:3px solid #eee;
+	height: 422px;
+	margin-bottom: 20px;
+}
+.Price .C-forMargin{padding-bottom: 30px;}
+.Price .Price-box:hover p
+{
+	transform: scale(1.2,1.2) rotate(360deg);
+	border:5px solid #dfdfdf;
+}
+.Price .Price-box p{font-family: 'jura',sans-serif}
+
+/* End Price section override*/
+
+/* Start team section override*/
+.Our-team
+{
+	background: url("../imgs/team/teamPic.jpg") no-repeat center fixed;
+	background-size: cover;
+	width: 100%;
+	min-height: 600px;
+}
+.Our-team .team
+{
+	background: rgba(2,2,2,0.4);
+	min-height: 600px;
+	color: #fff;
+	padding: 50px 0;
+}
+.Our-team h1
+{
+	margin-bottom: 50px;
+	padding-top: 20px;
+	font-family: 'Dancing Script', cursive;
+}
+.Our-team img
+{
+	width: 170px;
+	height: 170px;
+  /*box-shadow: horizontal  vertical  spread #color;*/
+	box-shadow: 10px 10px 10px #0c0a06;
+	border:3px solid #fff;
+}
+/*
+//we ignore it and use lib hover.css
+.Our-team img:hover
+{
+	width: 200px;
+	height: 200px;
+	transition: width 0.5s ease-in ,height 0.5s ease-in;
+}
+.Our-team img:not(:hover)
+{
+	width: 170px;
+	height: 170px;
+	transition: width 0.5s ease-out ,height 0.5s ease-out;
+}*/
+
+.Our-team .cluster-team{margin-bottom: 60px;}
+.Our-team h4 {margin: 20px 0 30px 0;}
+.Our-team p {font-family: 'Jura', sans-serif;}
+.Our-team i {background-color: none;color: #fff}
+.Our-team .lead{font-size: 1rem}
+/* End team section override*/
+
+/* Start Subscribe section override*/
+.Subscribe {background-color: #e1e1e1;padding: 50px 0;}
+.Subscribe h1
+{
+	font-family: 'Dancing Script', cursive;
+	color: #626262;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+.Subscribe p 
+{
+	margin-bottom: 50px;
+	font-weight: 450;
+	font-family: 'Jura',sans-serif;
+}
+.Subscribe .form-inline {display: inline-block; padding-bottom: 80px;}
+.Subscribe .form-control{border-radius: 0;}
+
+.Subscribe button{border-radius: 0;margin-left: -5px;}
+
+/* End Subscribe section override*/
+
+/* Start Statistics section override*/
+.Statistics
+{
+	min-height: 500px;
+	background: url("../imgs/statistics/stats1.jpg") no-repeat center fixed;
+	background-size: cover;
+
+}
+
+.Statistics .data
+{
+	background-color: rgba(2,2,2,0.75);
+	min-height: 500px;
+	color: #c9c9c9;
+}
+
+.Statistics h1 {padding: 80px 0;font-family: 'Dancing Script', cursive;}
+
+.Statistics p 
+{
+	font-size: 40px;
+	font-weight: 500;
+	font-family: 'Jura', sans-serif;
+}
+.Statistics span 
+{
+	font-size: 15px;
+	font-weight: 500;
+	font-family: 'Jura', sans-serif;
+}
+.Statistics .stats 
+{
+	transition: all 0.1s ease-in-out;
+	margin-bottom: 50px ;
+}
+.Statistics .stats:hover{color:#fff;}
+/* End Statistics section override*/
+
+/* Start Our skills section override*/
+.Our-skills{margin-bottom: 30px;min-height: 400px;}
+.Our-skills h1{margin:60px 0 60px 0;font-family: 'Dancing Script', cursive;}
+.Our-skills h3{font-family: 'Dancing Script', cursive;}
+.Our-skills p{margin-top:30px; font-family: "Jura",sans-serif;}
+.Our-skills .progress 
+{
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+	margin-bottom:30px; 	
+}
+.Our-skills .progress-bar
+{	
+	font-family: 'Dancing Script', cursive;
+	text-align: left;
+	text-indent: 20px;	
+}
+.Our-skills .Team-info{padding-top: 65px;}
+/* End Our-skills section override*/
+
+/* Start Contact-us section override*/
+.Contact-us
+{
+	min-height: 500px;
+	background: url("../imgs/contact/contact.jpg") no-repeat center fixed;
+	background-size: cover;
+	color: #d8d7d7;
+}
+.Contact-us h1{font-family: 'Dancing Script', cursive;}
+.Contact-us .contact-body{background-color:rgba(2,2,2,0.6);min-height: 675px;}
+.Contact-us form{margin-bottom: 20px}
+.Contact-us i{margin: 50px 0 30px;font-size: 50px;}
+.Contact-us textarea{height: 113px;}
+.Contact-us p{margin: 20px 0 30px;font-family: 'Jura',sans-serif}
+.Contact-us input[type="text"],
+.Contact-us textarea
+{
+	background-color: rgba(96,96,96,0.7);
+	border:none;
+	color: #fff;
+}
+.Contact-us button{margin-bottom: 20px;}
+.Contact-us .form-control:focus{background-color: rgba(96,96,96,0.7);color: #fff;}
+/* End Contact-us section override*/
+
+/* Start Our-client section override*/
+.Our-client {background-color:#eee;min-height: 100px;}
+.Our-client ul{display: contents;}
+.Our-client img
+{
+	height: 85px;
+	width: 150px;
+	margin-top: 10px;
+	opacity: 0.3;	
+	background-color:#eee;
+	transition: all 0.5s ease-in-out;
+
+}
+.Our-client img:hover{opacity: 1;}
+
+/* End Our-client section override*/
+
+/* Start Footer section override*/
+.Footer
+{
+	background-color: #333;
+	color: #aaa;
+	padding: 50px 0 0 0;
+}
+
+.Footer h3
+{
+	color: #0895D1;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+}
+.Footer h4{font-family: 'Jura',sans-serif;}
+.Footer .columns{overflow: hidden;}
+.Footer .social
+{
+	overflow: hidden;
+	margin: 45px 0 0 0; 
+}
+.Footer .social li
+{
+	float: left;
+	margin-right: 5px;
+	opacity: 0.5;
+	transition: all 0.2s ease-in-out;
+}
+.Footer .social li:hover{opacity: 1;}
+.Footer .columns li
+{
+	float: left;
+	width: 33.333%;
+	margin-bottom: 25px;
+
+}
+.Footer .media{margin-bottom: 5px;}
+.Footer .object
+{
+	height: 85px;
+	width: 80px;
+	margin-right: 15px;
+}
+.Footer .copyright{margin-bottom: 20px;}
+/* End Footer section override*/
+
+/* Start UP-button section override*/
+#Go-home
+{
+	color: #fff;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	border-radius: 100%;
+	position: fixed;
+	right: 50px;
+	bottom: 30px;
+	z-index: 99999;
+	display: none;
+	cursor: pointer;
+}
+
+#Go-home:hover{background-color: #b70d0d;}
+
+/* End UP-button override*/
+
+
+/* Start Loading-screen section override*/
+.Loading-screen
+{
+	background-color: #343a40;
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+}
+
+.sk-cube-grid {
+  width: 60px;
+  height: 60px;
+  margin: 400px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #fff;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}	
+/* End Loading-screen section override*/
+
+
+
+

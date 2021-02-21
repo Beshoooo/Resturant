@@ -1,0 +1,29 @@
+
+/*Start Default Theme*/
+.option-box .color-option ul li,
+.dropdown-menu a,
+.navbar .collapse .nav-link,
+.About strong,
+.About i,
+.testmonials span ,
+.navbar-brand span,
+.Footer .copyright span,
+.dropdown-divider
+{color: #ffc107}
+
+.dropdown-divider,
+.option-box .color-option
+{border-color: #ffc107}
+
+.testmonials li[class=active],
+.carousel li[class=active],
+.option-box i,
+#Go-home
+{background-color:#ffc107 }
+/*End Default Theme*/
+
+
+
+
+
+

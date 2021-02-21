@@ -1,0 +1,167 @@
+/*start about style*/
+body
+{
+	height: 100%;
+ 	width:100%;
+}
+/* hide horizantal scroll */
+.nicescroll-rails-hr .nicescroll-cursors{display: none}
+
+/* Start nav bar override*/
+.navbar-brand span {font-weight: bold;}
+.navbar-brand{font-size: 25px}
+nav {font-size: 20px}
+.dropdown-menu{background-color: #343a40;}
+.navbar-expand-lg .navbar-collapse{margin-right: 200px;}
+
+.navbar li ,.carousel li{padding-right: 30px;}
+.navbar  a{font-family: 'Jura', sans-serif;font-weight: bold}
+.navbar .collapse .nav-link{background-color: #343a40;}
+
+
+.dropdown-item{transition: padding 0.5s ease-in-out;}
+.dropdown-item:hover
+{
+	padding-left: 40px;
+}
+/* End nav bar override*/
+
+/*start breadcrumb section*/
+
+.breadcrumb_holder
+{
+	margin-top:63px;
+	background-color: #e9ecef;
+}
+
+
+
+
+/*End breadcrumb section */
+
+
+/*About section */
+.About{ margin: 60px 0 60px 0; }
+.About h3
+{
+	font-weight: bold;
+	padding-bottom: 20px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 70px;
+}
+.About p{font-family: 'Jura', sans-serif;font-size: 20px;}
+.About i{padding-top: 20px;font-size: 50px;}
+/*End About section */
+
+/*Start features section */
+.features {margin-bottom: 30px;}
+.features i{margin-bottom: 30px;}
+/*End features section */
+
+/*Start Help section */
+.Help .col-md-5{text-align: justify;}
+.Help a{margin-top: 30px;margin-bottom: 30px}
+
+/*End Help section */
+
+/* Start Our-client section override*/
+.Our-client {background-color:#eee;min-height: 100px;}
+.Our-client ul{display: contents;}
+.Our-client img
+{
+	height: 85px;
+	width: 150px;
+	margin-top: 10px;
+	opacity: 0.3;	
+	background-color:#eee;
+	transition: all 0.5s ease-in-out;
+
+}
+.Our-client img:hover{opacity: 1;}
+
+/* End Our-client section override*/
+
+/* Start Footer section override*/
+.Footer
+{
+	background-color: #333;
+	color: #aaa;
+	padding: 50px 0 0 0;
+}
+
+.Footer h3
+{
+	color: #0895D1;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+}
+.Footer h4{font-family: 'Jura',sans-serif;}
+.Footer .columns{overflow: hidden;}
+.Footer .social
+{
+	overflow: hidden;
+	margin: 45px 0 0 0; 
+}
+.Footer .social li
+{
+	float: left;
+	margin-right: 5px;
+	opacity: 0.5;
+	transition: all 0.2s ease-in-out;
+}
+.Footer .social li:hover{opacity: 1;}
+.Footer .columns li
+{
+	float: left;
+	width: 33.333%;
+	margin-bottom: 25px;
+
+}
+.Footer .media{margin-bottom: 5px;}
+.Footer .object
+{
+	height: 85px;
+	width: 80px;
+	margin-right: 15px;
+}
+.Footer .copyright{margin-bottom: 20px;}
+/* End Footer section override*/
+
+
+/*End about style*/
+
+
+/*Start FAQ style*/
+.faq-qestions{margin-bottom: 30px;}
+
+/* for making an arrow in the right and transform it when click*/
+.faq-qestions .card-header button:after
+{
+	font-family: FontAwesome;   
+	float: right;
+	content: "";
+    display: inline-block;
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")no-repeat ;
+    width: 17px;
+    height: 22px;
+    transition: transform 0.2s ease-in-out;
+}
+.faq-qestions .card-header button.collapsed:after
+{transform: rotate(180deg);}
+
+
+/*End FAQ style*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
