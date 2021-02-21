@@ -104,7 +104,12 @@ $(".Price-box a").on("click", function(){
   alert("Thanks For Your Trust");
 });
 
-//on click in subscibe.
-$(".Subscribe button").on("click", function(){
+//on click in subscibe OR submit in contact-us section.
+$(".Subscribe button,.Contact-us button").on("click", function(){
   alert("Thanks For Your honesty");
+});
+
+//on trying to Talk With A Professional
+$(".Our-skills .Team-info button").on("click", function(){
+  alert("Thanks For Your honesty Member Of Our Team Will Call You Back.");
 });
