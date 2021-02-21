@@ -2,4 +2,8 @@
 Bootstrap Design[1]
 
 ## Using
-bootstrap 4.6
+-HTML5 
+-CSS3
+-Javascript
+-Jquery
+-bootstrap 4.6
