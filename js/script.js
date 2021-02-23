@@ -1,15 +1,16 @@
 /*global console ,alert*/
 
 //make carousel work and change every 0.5s 
+
+
 $(document).ready(function()
 	{
+		$('.carousel').carousel({interval:7000});
+		
 		//Nice scroll lib
  		$("html").niceScroll({
  			cursorwidth:"10px"
  		});
-		$("#boxscroll").niceScroll({horizrailenabled:false});
-
-		$('.carousel').carousel({interval:7000});
 	});
 //end 
 
@@ -91,6 +92,8 @@ $(".Our-team i").on("mouseover", function(){
 $(".Our-team i").on("mouseout", function(){
   $(this).css('opacity','1');
 });
+
+
 
 
 //////////////////////////////////////////////////////////
