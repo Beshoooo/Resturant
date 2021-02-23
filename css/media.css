@@ -3,11 +3,9 @@
 {
 	.nav-link {padding: 5px 0 5px 0;}
 	.form-inline .form-control{margin: 10px auto;}
-	.Footer .social 
-	{
-    margin: 0px 0 35px 0;
-	}
-
+	.Footer .social{margin: 0px 0 35px 0;}
+	.sk-cube-grid{margin: 250px auto;}
+	.w-100{height: 568px}
 }
 
 /*small screen*/
@@ -15,6 +13,7 @@
 {
 	.nav-link {padding: 5px 0 5px 0;}
 	.form-inline .form-control{width: 425px;}
+	.sk-cube-grid{margin: 250px auto;}
 } 
 
 /*medium screen*/
